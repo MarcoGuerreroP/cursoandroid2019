@@ -6,11 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Button boton;
+    EditText edit;
+
+
 
 
     @Override
@@ -20,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         boton = (Button) findViewById(R.id.btn1);
+        edit = (EditText) findViewById(R.id.edt1);
+        String textTraslado;
+
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,14 +46,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"Hola com estas",Toast.LENGTH_SHORT);
 
-                Intent intent = new Intent(getApplicationContext(),Main2Activity.class);
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                final String textTraslado = edit.getText().toString();
+                intent.putExtra("Valor",textTraslado);
                 startActivity(intent);
+
             }
         });
 
 
-        Intent intent = new Intent(getApplicationContext(),Main2Activity.class);
-        startActivity(intent);
     }
 
     @Override
