@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora HD</string>
+    <string name="edt_numero1">Ingresa el primer numero</string>
+    <string name="edt_numero2">Ingresa el segundo numero</string>
+    <string name="btn_suma">SUMA</string>
+    <string name="btn_resta">RESTA</string>
+    <string name="btn_multi">MULTIPLICACION</string>
+    <string name="btn_divi">DIVICION</string>
+    <string name="txt_1">Solo numeros y no hay divisibles en 0</string>
+</resources>

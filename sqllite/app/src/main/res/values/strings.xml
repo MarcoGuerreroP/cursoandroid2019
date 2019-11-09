@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aplicacion de Base de Datos</string>
+    <string name="btn_insertar">Insertar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_leer">Leer</string>
+    <string name="btn_modificar">Modificar</string>
+    <string name="edt_nombre">Ingresar nombre</string>
+    <string name="edt_apellido">Ingresar apellido</string>
+    <string name="btn_insertar1">Insertar</string>
+    <string name="edt_pass">Ingresar password</string>
+</resources>
